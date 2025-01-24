@@ -2,10 +2,6 @@ Array.prototype.customReverse = function() {
     if(this === null || this === undefined){
         throw new TypeError('Array.prototype.customReverse called on null or undefined');
     }
-
-    if(!Array.isArray(this)) {
-        throw new TypeError('customReverse can only be called on arrays');
-    }
     
     const array = Object(this);
     const length = array.length >>> 0;
